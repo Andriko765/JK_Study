@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+*:focus{
+    outline:none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #EFF3F4;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(4, 4, 4, 0.6) 0%, rgba(16, 16, 16, 0.4) 100%), url(../img/house.heroMAin_background.jpg);
+    background-size: cover;
+    color: white;
+
+}
+
+.container{
+   max-width: 1200px;
+   min-width: 540px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.contact_number{
+    width:100%;
+    height: 45px;
+    padding: 3rem;
+    display: flex;
+    position: relative;
+}
+
+.contact_number p{
+    width:196px;
+    right: 0;
+    position: absolute;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+text-align: center  ;
+}
+
+.contact_number span{
+font-size: 1.3rem;
+}
+
+.hero {
+   
+ height: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.main_title{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 64px;
+line-height: 78px;
+}
+
+
+.subtitle{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+
+margin-top: 0.5rem;
+}
+
+.contact_text{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+max-width: 470px;
+
+}
+
+.form button{
+    color: white;
+    background: #FC9E01;
+    padding: 1rem 2rem;
+    margin-left: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+}
+
+.form{
+    margin-top: 1.7rem;
+}
+
+.contact_form{
+    padding-top: 4rem ;
+    
+
+}
+
+.form input{
+    width: 260px;
+height: 57px;
+background: white;
+border:  1px solid rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+padding: 1rem;
+}
+
+.house_description{
+    margin-top: 4.5rem;
+}
+
+.house_description .container{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 123px; */
+}
+
+@media  screen and (max-width: 1200px) {
+    .house_description .container{
+        justify-content: center;
+    }
+
+    .map_inner{
+        margin-top: 2.5rem;
+    }
+
+    .gallery_inner{
+        
+        justify-content: center !important;
+    }
+
+    .wrapping{
+        flex-wrap: wrap !important;
+    }
+}
+
+.description_jk_charek{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 4.1rem ;
+    column-gap: 5.4rem;
+
+}
+
+.description_jk{
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+/* Text/main */
+color: #1D1C1C;
+}
+
+.map_point{
+    display: flex;
+    width: 100%;
+    margin-bottom: 4.5rem;
+    transform:  translateX(-20px);
+}
+
+.marker_text{
+    padding-left: 1.9rem;
+}
+
+
+
+.charek_inner{
+    display: grid;
+    grid-template-columns: 1fr  120px;
+    column-gap: 2rem;
+    
+}
+
+.charek_text p{
+    /* H5 */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+}
+
+.charek_text .sm_blue{
+    margin-bottom:7px;
+}
+
+
+
+
+
+.sm_blue{
+font-size: 14px;
+line-height: 19px;
+color: #2C6E7C;
+
+}
+
+.marker_text p:nth-child(2){
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 26px;
+}
+
+.marker_text p:nth-child(3){
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.map_inner p{
+    /* Text_large */
+max-width: 560px;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+margin-top: 2.6rem;
+/* or 27px */
+}
+
+.gallery{
+    margin-top: 4.5rem;
+}
+
+.gallery_title h2{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 44px;
+line-height: 54px;
+}
+
+.gallery_title p{
+    margin-top: .5rem;
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+color: #99A8AC;
+
+}
+
+.gallery_inner{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2.5rem; */
+
+}
+
+.photo_column{
+    display: grid;
+    grid-template-rows: 3fr;
+   
+}
+
+.photo_column img{
+    margin-top: 2.5rem;
+
+}
+
+
+.slider_feature{
+    margin-top: 10rem;
+}
+
+.splide__slide .slide{
+    background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.07);
+border-radius: 20px;
+display: inline-flex;
+}
+
+
+.slide h2{
+    margin: 3rem 2rem 0.8rem;
+    width: fit-content;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+}
+
+.slide p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-left: 2rem;
+}
+
+.splide{
+    margin-top: 3.1rem;
+}
+
+/* Slider */
+
+.splide__track--nav>.splide__list>.splide__slide.is-active{
+    border: none !important;
+}
+
+.splide__arrow--next{
+    right: -4rem !important;
+}
+
+.splide__arrow--prev{
+    left: -4rem !important;
+}
+
+.splide__pagination{
+    bottom: -1.5em !important;
+}
+
+.splide__pagination__page{
+    background: #BEBEBE !important;
+}
+
+.splide__pagination__page.is-active{
+    background: #2C6E7C !important;
+}
+
+/* Slide_end */
+
+.plans{
+    margin-top: 6.5rem;
+}
+
+.map_point{
+    margin-top: 4.5rem;
+}
+
+
+/* Planing */
+
+
+
+#planning_list .splide__slide img {
+    max-width: 86px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .splider_holder{
+    display:  flex;
+    justify-content: space-between;
+  }
+
+  #planning_list{
+    display: grid !important;
+    grid-template-columns: repeat(3,0.5fr) !important;
+  }
+
+  #planning_list {
+    max-width: 360px;
+    height: 363px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+  }
+
+  #planning_list .splide__slide {
+    opacity: 0.6;
+  }
+  
+  #planning_list .splide__slide.is-active {
+    opacity: 1;
+  }
+
+  #main .splide__slide {
+    margin: auto;
+  }
+
+
+  #main .splide__slide .is-prev {
+    margin: auto;
+  }
+
+  #main .splide__slide .is-active {
+margin: auto;
+ }
+
+  #main .splide__slide .is-next {
+    margin: auto;
+  }
+
+  #main .splide__slide.is-visable {
+    margin: auto;
+  }
+  
+
+  #planning_list .splide__slide{
+    margin:.5rem 1rem !important;
+  }
+
+  #main_planing_list{
+  
+    /* width: 560px;
+    height: 325px; */
+    /* background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.07);
+border-radius: 20px; */
+  }
+
+#main .splide__track{
+     width: 560px;
+    height: 325px;
+     background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.07);
+border-radius: 20px;
+}
+
+  #thumbnails .splide__slide__container{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+  }
+
+#near_places img{
+    background: #C4C4C4;
+border-radius: 10px;
+}
+
+#near_places h4{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 26px;
+margin: 8px 0;
+}
+
+#near_places p{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+
+}
+
+.map_main {
+    margin-bottom: 6rem;
+}
+
+.variants_inner {
+    display: flex;
+}
+
+.variants_inner h4{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 26px;
+}
+
+.variants_inner img{
+    margin: 80px 40px 26px 0;
+
+}
